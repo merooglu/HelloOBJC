@@ -14,6 +14,10 @@
 		91C9E46F242E057A006FB708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C9E46E242E057A006FB708 /* Assets.xcassets */; };
 		91C9E472242E057A006FB708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C9E470242E057A006FB708 /* LaunchScreen.storyboard */; };
 		91C9E475242E057A006FB708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9E474242E057A006FB708 /* main.m */; };
+		91C9E47E242E05F1006FB708 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9E47D242E05F1006FB708 /* HTTPService.m */; };
+		91C9E482242E7665006FB708 /* VideoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9E481242E7664006FB708 /* VideoTVCell.m */; };
+		91C9E486242E7F6F006FB708 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9E485242E7F6F006FB708 /* Video.m */; };
+		91C9E48A242E96BC006FB708 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9E489242E96BC006FB708 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		91C9E471242E057A006FB708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91C9E473242E057A006FB708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C9E474242E057A006FB708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91C9E47C242E05F1006FB708 /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		91C9E47D242E05F1006FB708 /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		91C9E480242E7664006FB708 /* VideoTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoTVCell.h; sourceTree = "<group>"; };
+		91C9E481242E7664006FB708 /* VideoTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoTVCell.m; sourceTree = "<group>"; };
+		91C9E484242E7F6F006FB708 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		91C9E485242E7F6F006FB708 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		91C9E488242E96BC006FB708 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		91C9E489242E96BC006FB708 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +73,14 @@
 		91C9E461242E0578006FB708 /* DevslopesTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				91C9E483242E7F58006FB708 /* Model */,
+				91C9E47F242E7635006FB708 /* View */,
+				91C9E487242E88E1006FB708 /* Controller */,
+				91C9E47B242E05CF006FB708 /* Services */,
 				91C9E462242E0578006FB708 /* AppDelegate.h */,
 				91C9E463242E0578006FB708 /* AppDelegate.m */,
 				91C9E465242E0578006FB708 /* SceneDelegate.h */,
 				91C9E466242E0578006FB708 /* SceneDelegate.m */,
-				91C9E468242E0578006FB708 /* ViewController.h */,
-				91C9E469242E0578006FB708 /* ViewController.m */,
 				91C9E46B242E0578006FB708 /* Main.storyboard */,
 				91C9E46E242E057A006FB708 /* Assets.xcassets */,
 				91C9E470242E057A006FB708 /* LaunchScreen.storyboard */,
@@ -74,6 +88,44 @@
 				91C9E474242E057A006FB708 /* main.m */,
 			);
 			path = DevslopesTutorials;
+			sourceTree = "<group>";
+		};
+		91C9E47B242E05CF006FB708 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				91C9E47C242E05F1006FB708 /* HTTPService.h */,
+				91C9E47D242E05F1006FB708 /* HTTPService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		91C9E47F242E7635006FB708 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91C9E480242E7664006FB708 /* VideoTVCell.h */,
+				91C9E481242E7664006FB708 /* VideoTVCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91C9E483242E7F58006FB708 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91C9E484242E7F6F006FB708 /* Video.h */,
+				91C9E485242E7F6F006FB708 /* Video.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91C9E487242E88E1006FB708 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91C9E468242E0578006FB708 /* ViewController.h */,
+				91C9E469242E0578006FB708 /* ViewController.m */,
+				91C9E488242E96BC006FB708 /* VideoViewController.h */,
+				91C9E489242E96BC006FB708 /* VideoViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C9E46A242E0578006FB708 /* ViewController.m in Sources */,
+				91C9E482242E7665006FB708 /* VideoTVCell.m in Sources */,
+				91C9E47E242E05F1006FB708 /* HTTPService.m in Sources */,
 				91C9E464242E0578006FB708 /* AppDelegate.m in Sources */,
 				91C9E475242E057A006FB708 /* main.m in Sources */,
 				91C9E467242E0578006FB708 /* SceneDelegate.m in Sources */,
+				91C9E48A242E96BC006FB708 /* VideoViewController.m in Sources */,
+				91C9E486242E7F6F006FB708 /* Video.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevslopesTutorials/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DevslopesTutorials/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
